@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "formik": "^1.5.1",
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-datepicker": "^2.2.0",
+    "react-dom": "^16.8.4"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
