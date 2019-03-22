@@ -4,14 +4,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 
-export const DateField = ( {label, field} ) => (
+export const DateField = ( {field} ) => (
     <DatePicker
         selected={field.value}
         onChange={field.onChange}
-        showTimeInput
         id={field.name}
-        timeFormat="HH:mm"
-        timeIntervals={1}
     />
 );
 
@@ -24,10 +21,10 @@ class IndexPage extends React.Component {
                     console.log(values);
                 }}
             >
-                {({isSubmitting, values, ...other}) => {
+                {() => {
                     return (
                         <Form>
-                            <Field name="scheduleTime" label="Schedule" component={DateField}/>
+                            <Field name="scheduleTime" component={DateField}/>
                             <button type='submit'>Submit Form</button>
                         </Form>
                     )
